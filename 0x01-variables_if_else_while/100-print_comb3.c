@@ -24,7 +24,7 @@ if (e != i && e < i)
 	break;
 }
 	putchar(',');
-	putchar(' ');	
+	putchar(' ');
 }
 	i++;
 }
