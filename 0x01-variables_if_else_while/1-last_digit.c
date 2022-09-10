@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** main - checks for the last digits
+/**
+*  main -main checks for the last digits of a number stored in a variable
 * Return: 0 - success
 */
 int main(void)
