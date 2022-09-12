@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
-* main - prints "and that piece of art is useful" - Dora Korpar, 2015-10-19 followed by a new line, to the standard error.
+* main - prints a phrase.
 * Return: 1 (success)
 */
 int main(void)
