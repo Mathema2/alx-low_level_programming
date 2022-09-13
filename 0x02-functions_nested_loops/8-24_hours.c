@@ -5,8 +5,11 @@
 */
 void jack_bauer(void)
 {
-int x = 0
-int a = 0, b = 0, c = 0, d = 0;
+int x = 0;
+int a = 0;
+int b = 0;
+int c = 0;
+int d = 0;
 
 while (x < 1440)
 {
@@ -23,6 +26,7 @@ if (d > 9)
 	c++;
 }
 if (c > 5)
+{
 	c = 0;
 	b++;
 }
@@ -32,4 +36,5 @@ if (b > 9)
 	a++;
 }
 x++;
+}
 }
