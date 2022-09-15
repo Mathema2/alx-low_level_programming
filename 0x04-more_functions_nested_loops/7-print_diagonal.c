@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_diagonal - prints a diagonal
@@ -12,18 +11,20 @@ int y;
 
 if (n <= 0)
 {
-	putchar('\n');
+	_putchar('\n');
 }
 else
 {
-for (x = 0; x < n; x++)
+	_putchar('\\');
+	_putchar('\n');
+for (i = 0; i < (n - 1); i++)
 {
-for (y = 0; y < x; y++)
+for (j = i; j >= 0; j--)
 {
-	putchar(32);
+	_putchar(' ');
 }
-_putchar(92);
-_putchar('\n');
+	_putchar('\\');
+	_putchar('\n');
 }
 }
 }
