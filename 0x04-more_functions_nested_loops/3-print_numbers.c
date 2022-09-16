@@ -12,7 +12,7 @@ int x;
 
 for (x = 48; x < 58; x++)
 {
-	_putchar(x);
+	putchar(x);
 }
-_putchar('10');
+putchar(10);
 }
