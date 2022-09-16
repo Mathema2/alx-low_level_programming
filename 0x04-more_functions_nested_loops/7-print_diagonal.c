@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * print_diagonal - prints a diagonal
- * @n: the number of times the character \ should be printed
+ * @n: the number of times the character \ will be printed
  * Return: empty
  */
+
 void print_diagonal(int n)
 {
 int x;
@@ -14,7 +16,7 @@ int y;
 {
 for (x = 0; x < n; x++)
 {
-for (y = 0; y > x; y++)
+for (y = 0; y < x; y++)
 {
 	putchar(' ');
 }
