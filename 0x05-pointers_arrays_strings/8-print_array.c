@@ -15,7 +15,7 @@ while (x < n)
 {
 if (x == n - 1)
 	printf("%d", *(a + x));
-else
+	else
 	printf("%d, ", *(a + x));
 	x++;
 }
