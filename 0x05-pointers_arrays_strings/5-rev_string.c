@@ -14,11 +14,11 @@ while (*(s + x) != '\0')
 {
 	x++;
 }
-x--;
+	x--;
 while (x >= 0)
 {
 	_putchar(*(s + x));
 	x--;
 }
-_putchar('\n');
+	_putchar('\n');
 }
