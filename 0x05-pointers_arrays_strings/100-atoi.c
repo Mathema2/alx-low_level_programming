@@ -8,19 +8,34 @@
 
 int _atoi(char *s)
 {
-unsigned int num = 0;
+int index, x;
+unsigned int num;
 int sign = 1;
+char now;
 
-do {
-if (*s == '-')
-sign *= -1;
-else if
-	(*s >= '0' && *s <= '9');
-num = (num * 10) + (*s - '0');
-else if
-	(num > 0)
-	break;
-} while (*s++);
-
-return ("num * sign");
+index = 0;
+num = 0;
+{
+while
+	(*(s + index) != '\0');
+	now = *(s + index);
+if (now == '-')
+{
+	sign *= -1;
+}
+if (now >= '0' && now <= '9')
+{
+	x = index;
+	while (*(s + x) > 47 && *(s + x) < 58)
+{
+	num = (num * 10) + *(s + x) - '0';
+	x++;
+}
+break;
+}
+index++;
+}
+if (sign < 0)
+	num *= sign;
+return (num);
 }
