@@ -20,5 +20,6 @@ void puts2(char *str);
 void puts_half(char *str);
 void puts_half(char *str);
 char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
 
 #endif /* MAIN_H */
