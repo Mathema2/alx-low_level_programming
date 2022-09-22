@@ -6,30 +6,29 @@
  * Return: pointer character
  */
 
-char *cap_string(char *m)
+char *cap_string(char *c)
 {
-int x = 0;
-int y;
-char sep[] = {32, '\t', 11, '\n', 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+int i = 0, j,
+sep[] = {32, '\t', 11,  '\n', 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-if (m[0] > 96 && m[0] < 123)
-	m[0] -= 32;
-while (m[x] != '\0')
+if (c[0] > 96 && c[0] < 123)
+c[0] -= 32;
+while (c[i] != '\0')
 {
-if (m[x] > 96 && m[x] < 123)
+if (c[i] > 96 && c[i] < 123)
 {
-	y = 0;
-	while (y < 14)
+j = 0;
+while (j < 14)
 {
-	if (m[x - 1] == sep[y])
+if (c[i - 1] == sep[j])
 {
-	m[x] -= 32;
-	break;
+c[i] -= 32;
+break;
 }
-y++;
+j++;
 }
 }
-x++;
+i++;
 }
-return (m);
+return (c);
 }
