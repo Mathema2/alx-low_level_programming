@@ -13,10 +13,10 @@ int x;
 int y;
 int z;
 
-if ( n % 2 == 0)
+if (n % 2 == 0)
 	z = n;
 else
-	z = n- 1;
+	z = n - 1;
 for (x = 0; x < z / 2; x++)
 {
 	y = a[x];
