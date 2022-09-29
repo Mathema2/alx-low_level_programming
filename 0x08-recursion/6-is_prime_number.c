@@ -12,7 +12,7 @@ int x = n / 2;
 
 if (n <= 1)
 	return (0);
-return ( is_prime(n, x));
+return (is_prime(n, x));
 }
 
 /**
