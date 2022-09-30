@@ -31,7 +31,7 @@ if (now >= '0' && now <= '9')
 	num = (num * 10) + *(s + x) - '0';
 	x++;
 }
-break;
+	break;
 }
 index++;
 }
