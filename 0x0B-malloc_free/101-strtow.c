@@ -57,21 +57,21 @@ if (str[wordCount] != ' ' && !letter)
 if (!strArr[counter])
 {
 	wordCount--;
-while (wordCount >= 0)
+	while (wordCount >= 0)
 	free(*(strArr + wordCount--));
-	free(strArr);
+free(strArr);
 	return (NULL);
 }
 	wordCount++;
 	letter = 1;
 }
-else if (str[counter] == ' ' && letter)
+	else if (str[counter] == ' ' && letter)
 	letter = 0;
-	counter++;
+counter++;
 }
-if (!wordCount)
+	if (!wordCount)
 	return (NULL);
-	return (strArr);
+return (strArr);
 }
 
 /**
