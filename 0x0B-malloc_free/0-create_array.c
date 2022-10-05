@@ -10,15 +10,15 @@
 
 char *create_array(unsigned int size, char c)
 {
-unsigned int a;
-char *s;
+unsigned int i;
+char *m;
 
-s = (char *) malloc(size * sizeof(char));
-if (s == NULL)
+m = (char *) malloc(size * sizeof(char));
+if (m == NULL)
 	return (NULL);
-	for (a = 0; a < size; a++)
+	for (i = 0; i < size; i++)
 {
-	s[a] = c;
+	m[i] = c;
 }
-return (s);
+return (m);
 }
