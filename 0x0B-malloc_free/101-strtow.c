@@ -37,20 +37,20 @@ if (str[counter] != ' ' && !letter)
 if (!strArr[counter])
 {
 	wordCount--;
-while (wordCount >= 0)
+	while (wordCount >= 0)
 	free(*(strArr + wordCount--));
-	free(strArr);
+free(strArr);
 	return (NULL);
 }
 	wordCount++;
 	letter = 1;
 }
-else if (*(str + counter) == ' ' && letter)
+	else if (*(str + counter) == ' ' && letter)
 	letter = 0;
-	counter++;
-if (!wordCount)
+counter++;
+	if (!wordCount)
 	return (NULL);
-	return (strArr);
+return (strArr);
 if (str[wordCount] != ' ' && !letter)
 {
 	strArr[counter] = first_word(str + counter);
