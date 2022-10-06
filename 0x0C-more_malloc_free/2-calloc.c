@@ -17,8 +17,8 @@ char *call;
 
 if (nmemb == 0 || size == 0)
 	return (NULL);
-	b = (nmemb * size);
-	call = malloc(b);
+b = (nmemb * size);
+call = malloc(b);
 if (call == NULL)
 	return (NULL);
 for (a = 0; a < b; a++)
