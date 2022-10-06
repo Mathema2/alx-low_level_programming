@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * malloc_checked - give memory using malloc and exit if failed
@@ -9,9 +10,10 @@
 
 void *malloc_checked(unsigned int b)
 {
-int *x = malloc(b);
+void *p;
 
-if (x == 0)
+p = malloc(b);
+if (p == NULL)
 	exit(98);
-return (x);
+return (p);
 }
