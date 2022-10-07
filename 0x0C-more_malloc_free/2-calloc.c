@@ -15,9 +15,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 unsigned int a, b;
 char *call;
 
-if (nmemb == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 	return (NULL);
-b = (nmemb * size);
+	b = (nmemb * size);
 call = malloc(b);
 if (call == NULL)
 	return (NULL);
