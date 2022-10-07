@@ -26,7 +26,7 @@ for (b = 0; s2[b] != '\0'; b++)
 {
 }
 	if (n > b)
-n = b;
+	n = b;
 	newString = malloc(((a + n) + 1));
 if (newString == NULL)
 return (NULL);
