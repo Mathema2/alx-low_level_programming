@@ -2,8 +2,9 @@
 #define DOG_H
 
 /*
- * struct dog - this descripction about which dog
+ * struct dog: this is the new type struct dog
  */
+
 struct dog
 {
 char *name;
