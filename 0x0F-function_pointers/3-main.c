@@ -3,27 +3,36 @@
 #include <stdio.h>
 
 /**
- * main - contain your main function only
- * @argc: pointer to an array
- * @argv: convert arguments
- * Return: nothing
+ * @argc: arguments
+ * @argv: pointer to arguments
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-int (*oprt)(int, int);
+int one, two, ans;
+int (*res)(int, int);
+char *get_op;
 
 if (argc != 4)
 {
 	printf("Error\n");
 	exit(98);
 }
-oprt = get_op_func(argv[2]);
-if (!oprt)
+one = atoi(argv[1]);
+two = atoi(argv[3]);
+get_op = argv[2];
+if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 {
 	printf("Error\n");
 	exit(99);
 }
-printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
-return (0);
+if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
+{
+	printf("Error\n");
+	exit(100);
+}
+res = get_op_func(get_op);
+ans = res(one, two);
+printf("%d\n", ans);return (0);
 }

@@ -15,10 +15,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - calculates the difference of a and b
- * @a: 1st number 
- * @b: 2nd number
- * Return: the difference of a and b
+ * op_sub - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 
 int op_sub(int a, int b)
@@ -27,10 +27,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - calculates the product of a and b
- * @a: 1st num
- * @b: 2nd num
- * Return: the product of a and b
+ * op_mul - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 
 int op_mul(int a, int b)
@@ -39,35 +39,25 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - funds the result of the division of a by b
- * @a: 1st num
- * @b: 2nd num
- * Return: result of the division of a by b
+ * op_div - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 
 int op_div(int a, int b)
 {
-if (b == 0)
-{
-	printf("Error\n");
-	exit(100);
-}
-return (a / b);
+	return (a / b);
 }
 
 /**
- * op_mod - returns the sum of a and b
- * @a: 2nd integer
- * @b: 2nd integer
- * Return: nothing
+ * op_mod - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 
 int op_mod(int a, int b)
 {
-if (b == 0)
-{
-	printf("Error\n");
-	exit(100);
-}
-return (a % b);
+	return (a % b);
 }

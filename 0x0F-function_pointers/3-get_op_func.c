@@ -3,43 +3,28 @@
 #include <string.h>
 
 /**
- <<<<<<< HEAD
- * get_op_func - return the operator passed as argument
+ * get_op_func - matches operator from main
  * @s: the operator passed as argumen
- * Return: pointer to the fuction
+ * Return: 0
  */
 
-=======
-  * get_op_func - the operator passed as argumen
-  * @s: the operator passed as argument
-  * Return: a pointer to the function
-  */
->>>>>>> 27b4117ba9e8f5489dde71fcc3fe32e3019c6dfa
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = {
-	{ "+", op_add },
-	{ "-", op_sub },
-	{ "*", op_mul },
-<<<<<<< HEAD
-{ "/", op_div }
-=======
-{ "/", op_div },
->>>>>>> 27b4117ba9e8f5489dde71fcc3fe32e3019c6dfa
-{ "%", op_mod },
-{ NULL, NULL }
+op_t op_s[] = {
+	{"+", op_add},
+	{"-", op_sub},
+	{"*", op_mul},
+	{"/", op_div},
+	{"%", op_mod},
+	{NULL, NULL}
 };
 int i = 0;
 
-while (i < 5)
+while (op_s[i].op)
 {
-if (strcmp(s, ops[i].op) == 0)
-	return (ops[i].f);
-<<<<<<< HEAD
-=======
-
->>>>>>> 27b4117ba9e8f5489dde71fcc3fe32e3019c6dfa
+if (*(op_s[i].op) == *s)
+	return (op_s[i].f);
 i++;
 }
-return (0);
+return (NULL);
 }
