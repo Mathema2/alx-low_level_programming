@@ -2,7 +2,10 @@
 #define DOG_H
 
 /*
- * struct dog: this is the new type struct dog
+ * struct dog: this is the new type structure dog
+ * @name: it's name
+ * @age: it's age
+ * @owner: it's owner
  */
 
 struct dog
@@ -17,5 +20,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 void free_dog(dog_t *d);
 int _strlen(char *s);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
