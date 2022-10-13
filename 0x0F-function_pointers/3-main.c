@@ -3,8 +3,10 @@
 #include <stdio.h>
 
 /**
+ * main -  get_op_func has operators correlated with
+ * func signs and funcs from op_func
  * @argc: arguments
- * @argv: pointer to arguments
+ * @argv: double pointer to arguments
  * Return: 0
  */
 
@@ -34,5 +36,7 @@ if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
 }
 res = get_op_func(get_op);
 ans = res(one, two);
-printf("%d\n", ans);return (0);
+
+printf("%d\n", ans);
+return (0);
 }
