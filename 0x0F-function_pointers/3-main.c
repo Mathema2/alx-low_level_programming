@@ -5,7 +5,7 @@
 /**
  * main -  get_op_func has operators correlated with
  * func signs and funcs from op_func
- * @argc: arguments
+ * @argc: arguments for main function
  * @argv: double pointer to arguments
  * Return: 0
  */
@@ -34,9 +34,9 @@ if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
 	printf("Error\n");
 	exit(100);
 }
-res = get_op_func(get_op);
-ans = res(one, two);
+	res = get_op_func(get_op);
 
+ans = res(one, two);
 printf("%d\n", ans);
 return (0);
 }
