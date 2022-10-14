@@ -18,6 +18,7 @@ for (count = 0; count < n; count++)
 {
 	char *s;
 	s = va_arg(ap, char *);
+
 	if (s == NULL)
 	printf("(nil)");
 	else
