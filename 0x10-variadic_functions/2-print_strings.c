@@ -17,14 +17,15 @@ va_start(ap, n);
 for (count = 0; count < n; count++)
 {
 	char *s;
+
 	s = va_arg(ap, char *);
 
 	if (s == NULL)
-	printf("(nil)");
+		printf("(nil)");
 	else
-	printf("%s", s);
+		printf("%s", s);
 	if (separator != NULL && (count + 1) != n)
-	printf("%s", separator);
+		printf("%s", separator);
 }
 printf("\n");
 va_end(ap);
