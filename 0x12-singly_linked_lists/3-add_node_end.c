@@ -32,7 +32,7 @@ list_t *last = *head;
 if (new_node == NULL || str == NULL)
 {
 	free(new_node);
-	return "NULL";
+	return NULL;
 }
 new_node->str = strdup(str);
 new_node->len = len(str);
